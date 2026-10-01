@@ -28,6 +28,9 @@ class LinkedList:
             lastNode.next = newNode
 
     def printList(self):
+        if self.head is None:
+            print("List is empty")
+            return
         currentNode = self.head
         while True:
             if currentNode is None:
